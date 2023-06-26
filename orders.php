@@ -32,13 +32,13 @@ if(!isset($user_id)){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>PESANAN ANDA</h3>
-   <p> <a href="home.php">Beranda</a> / pesanan </p>
+   <h3>your orders</h3>
+   <p> <a href="home.php">home</a> / orders </p>
 </div>
 
 <section class="placed-orders">
 
-   <h1 class="title">Keranjang Pesanan</h1>
+   <h1 class="title">placed orders</h1>
 
    <div class="box-container">
 

@@ -50,14 +50,14 @@ if(isset($_POST['add_to_cart'])){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>PENCARIAN</h3>
-   <p> <a href="home.php">Beranda</a> / cari </p>
+   <h3>search page</h3>
+   <p> <a href="home.php">home</a> / search </p>
 </div>
 
 <section class="search-form">
    <form action="" method="post">
-      <input type="text" name="search" placeholder="cari produk" class="box">
-      <input type="submit" name="submit" value="cari" class="btn">
+      <input type="text" name="search" placeholder="search products..." class="box">
+      <input type="submit" name="submit" value="search" class="btn">
    </form>
 </section>
 

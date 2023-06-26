@@ -52,17 +52,16 @@ if(isset($_POST['add_to_cart'])){
 <section class="home">
 
    <div class="content">
-   
-      <h3>KAMPOENG ILMU</h3>
-      <p>Wisata Pendidikan dan Buku  Murah Surabaya</p>
-      <a href="about.php" class="white-btn">Kunjungi Kami</a>
+      <h3>Hand Picked Book to your door.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quod? Reiciendis ut porro iste totam.</p>
+      <a href="about.php" class="white-btn">discover more</a>
    </div>
 
 </section>
 
 <section class="products">
 
-   <h1 class="title">Produk Terbaru</h1>
+   <h1 class="title">latest products</h1>
 
    <div class="box-container">
 
@@ -74,13 +73,12 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
       <div class="name"><?php echo $fetch_products['name']; ?></div>
-      <div class="price">Rp <?php echo $fetch_products['price']; ?>/-</div>
+      <div class="price">$<?php echo $fetch_products['price']; ?>/-</div>
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
       <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
       <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
       <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-      
      </form>
       <?php
          }
@@ -101,13 +99,12 @@ if(isset($_POST['add_to_cart'])){
    <div class="flex">
 
       <div class="image">
-         <img src="images/new/Kampoeng-Ilmu-Surabaya.jpg" alt="">
+         <img src="images/about-img.jpg" alt="">
       </div>
 
       <div class="content">
-         <h3>Tentang Kami</h3>
-         <p>Kampung Ilmu merupakan salah satu tempat penjualan buku bekas terbesar di Surabaya. Kampung ini terletak di Jalan Semarang, tak jauh dari Stasiun Kereta Api Pasar Turi.</p>
-         <p>Kampung Ilmu dideklarasikan pada tahun 2008 oleh kumpulan pedagang kaki lima (PKL) yang awalnya menjual buku bekas di Jalan Semarang. Jauh sebelum diperkenalkannya Kampung Ilmu, tempat tersebut sudah menjadi pasar penjualan buku bekas sejak lama.</p>
+         <h3>about us</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
          <a href="about.php" class="btn">read more</a>
       </div>
 
@@ -118,9 +115,9 @@ if(isset($_POST['add_to_cart'])){
 <section class="home-contact">
 
    <div class="content">
-      <h3>Kamu Nanyea Beli Buku Murah Dimana?</h3>
-      <p>Ingat Kampoeng Ilmu!</p>
-      <a href="contact.php" class="white-btn">Kontak Kami</a>
+      <h3>have any questions?</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
+      <a href="contact.php" class="white-btn">contact us</a>
    </div>
 
 </section>

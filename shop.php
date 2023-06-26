@@ -50,13 +50,13 @@ if(isset($_POST['add_to_cart'])){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>PRODUK KAMI</h3>
-   <p> <a href="home.php">Beranda</a> / belanja </p>
+   <h3>our shop</h3>
+   <p> <a href="home.php">home</a> / shop </p>
 </div>
 
 <section class="products">
 
-   <h1 class="title">BUKU TERBARU</h1>
+   <h1 class="title">latest products</h1>
 
    <div class="box-container">
 
@@ -68,7 +68,7 @@ if(isset($_POST['add_to_cart'])){
      <form action="" method="post" class="box">
       <img class="image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
       <div class="name"><?php echo $fetch_products['name']; ?></div>
-      <div class="price">Rp <?php echo $fetch_products['price']; ?>/-</div>
+      <div class="price">$<?php echo $fetch_products['price']; ?>/-</div>
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
       <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">

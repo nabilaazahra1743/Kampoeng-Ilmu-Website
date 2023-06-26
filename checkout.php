@@ -71,8 +71,8 @@ if(isset($_POST['order_btn'])){
 <?php include 'header.php'; ?>
 
 <div class="heading">
-   <h3>BUAT PESANAN</h3>
-   <p> <a href="home.php">Beranda</a> / buat pesanan </p>
+   <h3>checkout</h3>
+   <p> <a href="home.php">home</a> / checkout </p>
 </div>
 
 <section class="display-order">
@@ -92,62 +92,62 @@ if(isset($_POST['order_btn'])){
       echo '<p class="empty">your cart is empty</p>';
    }
    ?>
-   <div class="grand-total"> grand total : <span>Rp <?php echo $grand_total; ?>/-</span> </div>
+   <div class="grand-total"> grand total : <span>$<?php echo $grand_total; ?>/-</span> </div>
 
 </section>
 
 <section class="checkout">
 
    <form action="" method="post">
-      <h3>INFORMASI PESANAN</h3>
+      <h3>place your order</h3>
       <div class="flex">
          <div class="inputBox">
-            <span>Nama :</span>
-            <input type="text" name="name" required placeholder="masukkan namamu">
+            <span>your name :</span>
+            <input type="text" name="name" required placeholder="enter your name">
          </div>
          <div class="inputBox">
-            <span>Telp :</span>
-            <input type="number" name="number" required placeholder="masukkan nomor telepon">
+            <span>your number :</span>
+            <input type="number" name="number" required placeholder="enter your number">
          </div>
          <div class="inputBox">
-            <span>Email :</span>
-            <input type="email" name="email" required placeholder="masukkan email">
+            <span>your email :</span>
+            <input type="email" name="email" required placeholder="enter your email">
          </div>
          <div class="inputBox">
-            <span>Metode Pembayaran :</span>
+            <span>payment method :</span>
             <select name="method">
-               <option value="cash on delivery">COD</option>
-               <option value="credit card">Kartu Kredit</option>
+               <option value="cash on delivery">cash on delivery</option>
+               <option value="credit card">credit card</option>
                <option value="paypal">paypal</option>
-               <option value="paytm">shopeepay</option>
+               <option value="paytm">paytm</option>
             </select>
          </div>
          <div class="inputBox">
-            <span>Alamat Rumah :</span>
-            <input type="number" min="0" name="flat" required placeholder="contoh: Gunung Anyar">
+            <span>address line 01 :</span>
+            <input type="number" min="0" name="flat" required placeholder="e.g. flat no.">
          </div>
          <div class="inputBox">
-            <span>Alamat Kantor :</span>
-            <input type="text" name="street" required placeholder="contoh: Rungkut  Madya 2B">
+            <span>address line 01 :</span>
+            <input type="text" name="street" required placeholder="e.g. street name">
          </div>
          <div class="inputBox">
-            <span>Kota :</span>
-            <input type="text" name="city" required placeholder="contoh: Surabaya">
+            <span>city :</span>
+            <input type="text" name="city" required placeholder="e.g. mumbai">
          </div>
          <div class="inputBox">
-            <span>Provinsi :</span>
-            <input type="text" name="state" required placeholder="contoh: Jawa Timur">
+            <span>state :</span>
+            <input type="text" name="state" required placeholder="e.g. maharashtra">
          </div>
          <div class="inputBox">
-            <span>Negara :</span>
-            <input type="text" name="country" required placeholder="contoh: Indonesia">
+            <span>country :</span>
+            <input type="text" name="country" required placeholder="e.g. india">
          </div>
          <div class="inputBox">
-            <span>Kode :</span>
-            <input type="number" min="0" name="pin_code" required placeholder="contoh: 123456">
+            <span>pin code :</span>
+            <input type="number" min="0" name="pin_code" required placeholder="e.g. 123456">
          </div>
       </div>
-      <input type="submit" value="pesan sekarang" class="btn" name="order_btn">
+      <input type="submit" value="order now" class="btn" name="order_btn">
    </form>
 
 </section>
